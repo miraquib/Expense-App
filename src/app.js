@@ -8,6 +8,7 @@ import { setTextFilter } from './actions/filters';
 import getVisibleExpenses from './selectors/expenses';
 import 'normalize.css/normalize.css';
 import './styles/style.scss';   
+import 'react-dates/lib/css/_datepicker.css';
 
 const store = configureStore();
 
@@ -16,7 +17,7 @@ store.dispatch(addExpense({ description: 'Gas Bill', amount: 300, createdAt: 100
 const expense1 = store.dispatch(addExpense({ description: 'Mobile Bill', amount: 105000, createdAt: 5000 }));
 
 
-
+ 
 // store.subscribe(() => {
     const state = store.getState();
     const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
