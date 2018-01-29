@@ -22,7 +22,7 @@ module.exports = (env) => {
           use: [
             {
               loader: 'css-loader',
-              option: {
+              options: {
                 sourceMap: true
               }
             },
@@ -32,8 +32,8 @@ module.exports = (env) => {
                 sourceMap: true
               }
             }
-          ] 
-        }) 
+          ]
+        })
       }]
     },
     plugins: [
